@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lydia Clark</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      margin: auto;
+      padding: 1rem;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    .project.reverse {
+    flex-direction: row-reverse;
+    }
+    .project-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    }
+    .project-text {
+    flex: 1;
+    }
+    .project-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    }
+    .project-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+    .project,
+    .project.reverse {
+        flex-direction: column;
+    }
+    .project-image,
+    .project-text {
+        text-align: center;
+    }
+    .project-text h2 {
+        margin-top: 1rem;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
+    <a href="/" class="flex items-center gap-x-4">
+      <img
+        src="logo.png"
+        width="80"
+        height="80"
+        alt="lydia logo"
+        class="rounded-2xl aspect-thumbnail object-cover"
+      />
+    </a>
+    <ul class="flex gap-x-10">
+      <li><a href="/" class="text-pink-200 font-bold">Home</a></li>
+      <li><a href="/resume" class="text-pink-200 font-bold">Resume</a></li>
+      <li><a href="/projects" class="text-pink-200 font-bold">Projects</a></li>
+      <li><a href="/interests" class="text-pink-200 font-bold">Interests</a></li>
+      <li><a href="/socials" class="text-pink-200 font-bold">Socials</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="project">
+      <div class="project-image left">
+        <img src="logo.png" alt="Project 1">
+      </div>
+      <div class="project-text">
+        <h2>Chess</h2>
+        <p>In my free time, I enjoy playing chess with friends. Sometimes I attend local chess clubs, such as the Boulder Chess Club or CU Chess club, as well. While I am not the best at it, I enjoy the strategy that goes into playing!</p>
+      </div>
+    </section>
+  
+    <section class="project reverse">
+      <div class="project-image right">
+        <img src="logo.png" alt="Project 2">
+      </div>
+      <div class="project-text">
+        <h2>Music</h2>
+        <p>Music has always been a great interest of mine, and I love attending local concerts to discover new music and spend time with friends in a fun atmosphere.</p>
+      </div>
+    </section>
+  
+    <section class="project">
+      <div class="project-image left">
+        <img src="logo.png" alt="Project 3">
+      </div>
+      <div class="project-text">
+        <h2>Fashion</h2>
+        <p>My favorite way to express myself is through my clothes, and in the realm of fashion, I would consider myself a collector. I love finding weird, unique (and often colorful) pieces of clothing that I feel stand-out.</p>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; Lydia Clark. 2025.</p>
+  </footer>
+
+</body>
+</html>

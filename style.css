@@ -1,0 +1,35 @@
+body{
+background: rgb(250,190,230);
+background: radial-gradient(circle, rgb(236, 154, 209) 0%, rgba(255,85,188,1) 100%);
+color: white;
+font-family: sans-serif;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.5rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+header ul {
+list-style: none;
+display: flex;
+gap: 2rem;
+margin: 0;
+padding: 0;
+}
+header a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+header a:hover {
+text-decoration: underline;
+}
+footer {
+text-align: center;
+margin-top: 4rem;
+padding: 2rem;
+font-size: 0.9rem;
+}

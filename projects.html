@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lydia Clark</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      margin: auto;
+      padding: 1rem;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    .project.reverse {
+    flex-direction: row-reverse;
+    }
+    .project-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    }
+    .project-text {
+    flex: 1;
+    }
+    .project-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    }
+    .project-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+    .project,
+    .project.reverse {
+        flex-direction: column;
+    }
+    .project-image,
+    .project-text {
+        text-align: center;
+    }
+    .project-text h2 {
+        margin-top: 1rem;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto">
+    <a href="/" class="flex items-center gap-x-4">
+      <img
+        src="logo.png"
+        width="80"
+        height="80"
+        alt="lydia logo"
+        class="rounded-2xl aspect-thumbnail object-cover"
+      />
+    </a>
+    <ul class="flex gap-x-10">
+      <li><a href="/" class="text-pink-200 font-bold">Home</a></li>
+      <li><a href="/resume" class="text-pink-200 font-bold">Resume</a></li>
+      <li><a href="/projects" class="text-pink-200 font-bold">Projects</a></li>
+      <li><a href="/interests" class="text-pink-200 font-bold">Interests</a></li>
+      <li><a href="/socials" class="text-pink-200 font-bold">Socials</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="project">
+      <div class="project-image left">
+        <img src="logo.png" alt="Project 1">
+      </div>
+      <div class="project-text">
+        <h2>School Simulator</h2>
+        <p>
+        As a project for one of my very first programming classes (an intro to C++) we were required to create a game. I came up with a school simulator in which the user could learn material, take tests, and move up to a higher level of that "class" if their test score is high enough. Upon completion of all courses, the user recieves a report card with their class grades listed, as well as a GPA.
+        </p>
+      </div>
+    </section>
+  
+    <section class="project reverse">
+      <div class="project-image right">
+        <img src="logo.png" alt="Project 2">
+      </div>
+      <div class="project-text">
+        <h2>Three.js Rotating Torus Checkerboard</h2>
+        <p>
+        I took a course on three.js to get more familiar with three dimensional programming. In order to demonstrate my skills, I created a page using React and Three.js displayig an alternating pink and green checkerboard pattern with a rotating torus in each square, complete with lighting and shadow techniques learned through the course.
+        </p>
+      </div>
+    </section>
+  
+    <section class="project">
+      <div class="project-image left">
+        <img src="logo.png" alt="Project 3">
+      </div>
+      <div class="project-text">
+        <h2>Recreation of Asana Using Notion</h2>
+        <p>
+        The company I work for was using Asana for managing their project and task assignment, while they kept all project and task documentation in Notion. For a more cost effective and integrated solution, I was able to recreate the Asana dashboard within Notion to have everything in one, easy-to-access place. This meant that my job no longer required the use of Asana, and each of my coworkers were able to view their assigned tasks, documentation for their tasks, and even information about which website or client the task was for without the use of multiple applications.
+        </p>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; Lydia Clark. 2025.</p>
+  </footer>
+
+</body>
+</html>
